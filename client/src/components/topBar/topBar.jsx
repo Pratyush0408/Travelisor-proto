@@ -1,3 +1,4 @@
+import Imager from '../image/imager'
 import UserButton from '../userButton/userButton'
 import './topBar.css'
 
@@ -6,7 +7,7 @@ const TopBar = () => {
     <div className='topBar'>
       {/* Search bar */}
       <div className='search'>
-        <img src="/general/search.svg" alt="" />
+        <Imager src="/general/search.svg" alt="" />
         <input type="text" placeholder='Search' />
       </div>
       {/* USER */}
