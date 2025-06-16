@@ -1,0 +1,100 @@
+.comments {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.commentList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+/* Optional: smoother scrollbar */
+.commentList::-webkit-scrollbar {
+  width: 6px;
+}
+.commentList::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.comment {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.comment img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.commentContent {
+  background-color: #f9f9f9;
+  padding: 10px 14px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 100%;
+}
+
+.commentUsername {
+  font-weight: 600;
+  font-size: 13px;
+  color: #333;
+}
+
+.commentText {
+  font-size: 13px;
+  color: #444;
+  word-break: break-word;
+}
+
+.commentTime {
+  font-size: 11px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.commentForm {
+  background-color: #f1f1f1;
+  padding: 12px 20px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.commentForm input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: #333;
+}
+
+.emoji {
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  position: relative;
+  transition: transform 0.1s ease;
+}
+.emojiPicker {
+  position: absolute;
+  bottom: 40px; /* adjust as needed */
+  right: 0;
+  z-index: 10;
+}
