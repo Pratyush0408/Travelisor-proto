@@ -1,3 +1,99 @@
-.authPage{
-    
+/* authPage.css */
+
+.authPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e6f4ea; /* Light greenish background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.authContainer {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.authContainer img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.authContainer h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #333;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.formGroup label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #555;
+}
+
+.formGroup input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s ease;
+}
+
+.formGroup input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #43a047;
+}
+
+.authContainer p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.authContainer p:hover {
+  color: #2e7d32;
+}
+
+.authContainer p b {
+  color: #4caf50;
+  margin-left: 4px;
+}
+
+.authContainer .error {
+  color: #e60023;
+  font-size: 13px;
+  margin-top: 10px;
 }
