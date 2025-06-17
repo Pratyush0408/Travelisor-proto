@@ -1,20 +1,21 @@
-import { useState } from 'react'
-import './userButton.css'
-import Imager from '../image/imager';
+import { useState } from "react";
+import "./userButton.css";
+import Imager from "../image/imager";
+import { Link } from "react-router";
 
 const UserButton = () => {
   const [open, setOpen] = useState(false);
 
   // TEMP
-  const currentUser = true;
+  const currentUser = false;
 
   return currentUser ? (
     <div className="userButton">
       <Imager src="/general/noAvatar.png" alt="User Avatar" />
-      <Imager 
-        onClick={() => setOpen((prev) => !prev)} 
-        src="/general/arrow.svg" 
-        alt="Toggle Menu" 
+      <Imager
+        onClick={() => setOpen((prev) => !prev)}
+        src="/general/arrow.svg"
+        alt="Toggle Menu"
         className="arrow"
       />
       {open && (
@@ -26,9 +27,9 @@ const UserButton = () => {
       )}
     </div>
   ) : (
-    <a href='/' className='loginLink'>
-      Login / SignUp
-    </a>
+    <Link to="/auth" className="loginLink">
+      Login / Sign Up
+    </Link>
   );
 };
 

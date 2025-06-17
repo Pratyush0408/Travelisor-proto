@@ -1,6 +1,5 @@
-import GalleryItem from "../galleryItem/galleryItem"
-import './gallery.css'
-
+import GalleryItem from "../galleryItem/galleryItem";
+import "./gallery.css";
 
 // TEMPORARY
 const items = [
@@ -168,15 +167,14 @@ const items = [
   },
 ];
 
-
 const Gallery = () => {
   return (
-    <div className='gallery'>
-      {items.map((item)=>(
-        <GalleryItem key={item.id} item={item}/> 
+    <div className="gallery">
+      {items.map((item) => (
+        <GalleryItem key={item.id} item={item} />
       ))}
     </div>
-  )
-}
+  );
+};
 
 export default Gallery;
