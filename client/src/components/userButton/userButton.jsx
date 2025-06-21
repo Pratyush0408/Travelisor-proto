@@ -7,7 +7,7 @@ const UserButton = () => {
   const [open, setOpen] = useState(false);
 
   // TEMP
-  const currentUser = false;
+  const currentUser = true;
 
   return currentUser ? (
     <div className="userButton">

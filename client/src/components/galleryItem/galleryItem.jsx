@@ -11,7 +11,7 @@ const GalleryItem = ({ item }) => {
       style={{ gridRowEnd: `span ${Math.ceil(item.height / 100)}` }}
     >
       {/* Link is now proper and clickable */}
-      <Link to={`/pin/${item.id}`} className="overLay">
+      <Link to={`/pin/${item._id}`} className="overLay">
         <Imager src={item.media} alt="" w={372} h={optimizedHeight} />
       </Link>
 
